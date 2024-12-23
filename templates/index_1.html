@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 등록</title>
+</head>
+<body>
+    <h1>사용자 정보 등록</h1>
+    <form method="POST" action="/user">
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="level">운동 수준:</label>
+        <select id="level" name="level">
+            <option value="초급">초급</option>
+            <option value="중급">중급</option>
+            <option value="고급">고급</option>
+        </select><br><br>
+
+        <button type="submit">등록</button>
+    </form>
+</body>
+</html>
